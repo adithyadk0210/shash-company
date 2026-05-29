@@ -1,0 +1,75 @@
+to open in vs code 
+Next time you want to use/test it:
+in terminal
+
+cd C:\Users\hp\shash-company> npm start
+Then open:
+
+http://localhost:3000
+
+paste above this in  browser to open the web
+
+
+****************************************************************************************************************************
+
+And check submissions in MySQL in command prompt 
+open cmd normally
+run the below command 
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p -h 127.0.0.1 -P 3307
+
+enter password : NewPassword123!
+
+Good. If you see:
+
+mysql>
+then run this:
+
+USE shash_company;
+
+enter 
+
+Then check Contact form submissions:
+
+SELECT * FROM contact_messages ORDER BY created_at DESC;
+
+enter 
+
+If you tested Careers form too, run:
+
+SELECT * FROM career_applications ORDER BY created_at DESC;
+
+enter
+
+****************************************************************************************************************************
+
+to run in MySQL
+Open MySQL Workbench.
+
+Click:
+
+Local instance MySQL80
+Enter password:
+NewPassword123!
+After it opens, look at the left side under Schemas.
+
+Click the refresh icon beside Schemas if needed.
+
+Find and expand:
+
+shash_company
+Expand:
+Tables
+You should see:
+
+career_applications
+contact_messages
+To view Contact data:
+
+Right-click contact_messages
+Click Select Rows - Limit 1000
+To view Career data:
+
+Right-click career_applications
+Click Select Rows - Limit 1000
+
+**************************************************************************************************************************

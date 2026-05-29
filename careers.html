@@ -71,14 +71,14 @@
                         <p><strong>UPI-2M :</strong> Unpaid internship openings for B.Tech III year ECE or CSE with expertise in cpp or Matlab or VHDL. Tenure: two months.</p>
                         <p><strong>UPI-1M :</strong> Unpaid internship openings for B.Tech III year ECE or CSE with expertise in cpp or Matlab or VHDL. Tenure: one month.</p>
                     </div>
-                    <form class="career-form">
+                    <form class="career-form" data-form-type="career">
                         <h2>Get In Touch</h2>
                         <div class="career-form-row">
-                            <input type="text" name="first-name" placeholder="First Name" aria-label="First Name">
-                            <input type="text" name="last-name" placeholder="Last Name" aria-label="Last Name">
+                            <input type="text" name="first-name" placeholder="First Name" aria-label="First Name" required>
+                            <input type="text" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
                         </div>
                         <div class="career-form-row">
-                            <input type="email" name="email" placeholder="Email" aria-label="Email">
+                            <input type="email" name="email" placeholder="Email" aria-label="Email" required>
                             <input type="tel" name="phone" placeholder="Phone" aria-label="Phone">
                         </div>
                         <details class="career-code-picker">
@@ -93,12 +93,14 @@
                                 <label><input type="radio" name="internship-code" value="UPI-1M"> UPI-1M</label>
                             </div>
                         </details>
-                        <textarea name="message" rows="5" placeholder="Type your message here" aria-label="Message"></textarea>
+                        <textarea name="message" rows="5" placeholder="Type your message here" aria-label="Message" required></textarea>
                         <button type="submit">Submit</button>
+                        <p class="form-status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

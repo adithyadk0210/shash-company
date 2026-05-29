@@ -509,6 +509,27 @@ body:has(.page-header) {
     resize: vertical;
 }
 
+.form-status {
+    margin: -4px 0 0;
+    color: var(--accent);
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.form-status[data-type="error"] {
+    color: #ff8a8a;
+}
+
+.form-status[data-type="success"] {
+    color: var(--accent-strong);
+}
+
+.contact-form button:disabled,
+.career-form button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
 .address-card {
     padding: 24px;
 }

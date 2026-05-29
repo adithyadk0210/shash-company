@@ -38,20 +38,21 @@
                 <h1>Tell us what you need to detect, track, or protect.</h1>
             </div>
             <div class="contact-stack">
-                <form class="contact-form">
+                <form class="contact-form" data-form-type="contact">
                     <label>
                         Name
-                        <input type="text" name="name" placeholder="Your name">
+                        <input type="text" name="name" placeholder="Your name" required>
                     </label>
                     <label>
                         Email
-                        <input type="email" name="email" placeholder="you@company.com">
+                        <input type="email" name="email" placeholder="you@company.com" required>
                     </label>
                     <label>
                         Message
-                        <textarea name="message" rows="4" placeholder="Project details"></textarea>
+                        <textarea name="message" rows="4" placeholder="Project details" required></textarea>
                     </label>
                     <button type="submit">Send Message</button>
+                    <p class="form-status" aria-live="polite"></p>
                 </form>
 
                 <article class="address-card">
@@ -69,5 +70,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

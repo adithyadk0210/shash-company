@@ -23,6 +23,25 @@ function setStatus(form, message, type) {
     status.dataset.type = type;
 }
 
+function updateInternshipCodeLabel(picker, value) {
+    const summary = picker.querySelector("summary");
+
+    if (!summary) {
+        return;
+    }
+
+    summary.textContent = value || "Internship Code";
+}
+
+function resetCustomFields(form) {
+    const picker = form.querySelector(".career-code-picker");
+
+    if (picker) {
+        picker.open = false;
+        updateInternshipCodeLabel(picker, "");
+    }
+}
+
 async function submitForm(event) {
     event.preventDefault();
 
@@ -70,6 +89,7 @@ async function submitForm(event) {
         }
 
         form.reset();
+        resetCustomFields(form);
         setStatus(form, "Submitted successfully. We will get back to you soon.", "success");
     } catch (error) {
         setStatus(form, error.message, "error");
@@ -80,4 +100,13 @@ async function submitForm(event) {
 
 document.querySelectorAll("[data-form-type]").forEach((form) => {
     form.addEventListener("submit", submitForm);
+});
+
+document.querySelectorAll(".career-code-picker").forEach((picker) => {
+    picker.querySelectorAll("input[type='radio']").forEach((option) => {
+        option.addEventListener("change", () => {
+            updateInternshipCodeLabel(picker, option.value);
+            picker.open = false;
+        });
+    });
 });

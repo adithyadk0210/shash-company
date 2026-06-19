@@ -13,101 +13,237 @@
                 <img class="brand-logo" src="assets/logo.png" alt="Sri Shasha Prayathi Technologies logo">
                 <span class="brand-name">Sri Shasha Prayathi Technologies Pvt. Ltd</span>
             </a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="services.html">Product/Services</a>
                 <a href="about.html">About Us</a>
-                <a href="projects.html">Projects &amp; Achievements</a>
-                <a href="contact.html">Contact Us</a>
-                <a class="career-button" href="careers.html">Careers</a>
+                <a href="projects.html">Achievements</a>
+                <a href="careers.html">Careers</a>
+                <a class="contact-button" href="contact.html">Contact Us</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="section page-section">
-            <div class="section-heading">
-                <p class="eyebrow">product/Services</p>
-                <h1>From concept to deployable sensing stack.</h1>
+        <section class="section page-section product-services-section" id="products-services">
+            <div class="product-services-heading">
+                <p class="eyebrow">Products / Services</p>
+                <h1>Radar systems, anti-drone solutions, and advanced RF hardware services.</h1>
             </div>
-            <div class="grid services-grid">
-                <details class="card service-tab" id="state-of-art-research">
-                    <summary>
-                        <h3>State of Art Research</h3>
-                        <p>Advanced research support for radar, sensing systems, embedded intelligence, and applied technology development.</p>
-                    </summary>
-                    <div class="service-detail">
+            <div class="product-services-grid">
+                <article class="product-service-card drdo-service-card">
+                    <h2>Services for DRDO Labs and Private Companies</h2>
+                    <ul>
+                        <li>Deep-tech start-up specializing in radar and electronic warfare technologies.</li>
+                        <li>Built significant intellectual property with major advancements achieved over the past six years.</li>
+                        <li>Successfully completed six radar development projects for DRDO laboratories.</li>
+                        <li>Established a proven track record of reliability, innovation, and technical excellence in advanced sensing systems.</li>
+                    </ul>
+                </article>
+
+                <article class="product-service-card anti-drone-card" id="anti-drone-radar">
+                    <h2>Anti Drone Radar</h2>
+                    <div class="service-feature-list">
                         <div>
-                            <p>We support early-stage investigation, feasibility studies, algorithm exploration, and prototype validation for radar and sensing-led products.</p>
-                            <p>Work can include literature study, signal-processing experiments, simulation planning, test-case design, and technical documentation.</p>
+                            <h3>Defense Anti Drone Radar</h3>
+                            <p>Range - 2000m</p>
+                            <p>Mode of Operation: FMCW or Pulsed</p>
                         </div>
-                        <div class="service-visual">
-                            <img src="assets/state_art.jpg" alt="Radar research and sensing visualization">
+                        <div>
+                            <h3>Civilian Anti Drone Radar</h3>
+                            <p>Range - 300m-500m</p>
+                            <p>Mode of Operation: FMCW</p>
+                        </div>
+                        <div>
+                            <h3>Industrial Anti Drone Radar</h3>
+                            <p>Range 500m-1000m</p>
+                            <p>Mode of Operation: FMCW</p>
                         </div>
                     </div>
-                </details>
-                <details class="card service-tab" id="consultancy-service">
-                    <summary>
-                        <h3>Consultancy Service</h3>
-                        <p>Technical consulting for product planning, system design, implementation strategy, and engineering decisions.</p>
-                    </summary>
-                    <div class="service-detail">
-                        <div>
-                            <p>We help teams clarify technical direction, choose suitable architectures, review implementation plans, and reduce uncertainty before development begins.</p>
-                            <p>Consulting can cover radar systems, embedded software, data processing workflows, testing strategy, and product-readiness planning.</p>
-                        </div>
-                        <div class="service-visual">
-                            <img src="assets/consultant.jpg" alt="Consultancy service visual">
-                        </div>
+                </article>
+
+                <article class="product-service-card radar-waveform-card" id="radar-waveform-generator">
+                    <h2>Radar Waveform Generator</h2>
+                    <h3 class="feature-subheading">Key Features</h3>
+                    <ul>
+                        <li>Real-time generation of multiple radar waveforms</li>
+                        <li>Support for LFM, Pulsed, Barker, Frank, and Polyphase-coded waveforms or any custom waveform</li>
+                        <li>FPGA-based architecture for high-speed and deterministic operation</li>
+                        <li>Programmable pulse width, PRI, bandwidth, and carrier frequency</li>
+                        <li>Reconfigurable waveform parameters without hardware modifications</li>
+                        <li>Multi-channel operation for phased-array and MIMO radar applications</li>
+                        <li>Support for custom waveform development and rapid prototyping applications</li>
+                    </ul>
+                </article>
+
+                <article class="product-service-card radar-echo-card" id="radar-target-echo-simulator">
+                    <h2>Radar Target Echo Simulator</h2>
+                    <h3 class="feature-subheading">Key Features</h3>
+                    <ul>
+                        <li>Real-time generation of programmable radar target echoes</li>
+                        <li>Independent control of target range, velocity, direction and RCS</li>
+                        <li>Support for single and multiple target scenarios</li>
+                        <li>Accurate Doppler shift and time-delay emulation</li>
+                        <li>FPGA-based architecture for deterministic low-latency operation</li>
+                        <li>High-fidelity digital RF memory (DRFM)-based target generation</li>
+                        <li>Configurable clutter and interference simulation</li>
+                        <li>Support for pulsed and FMCW radar systems</li>
+                        <li>Multi-channel operation for MIMO and phased-array radars</li>
+                        <li>User-configurable target profiles and motion trajectories</li>
+                        <li>Hardware-in-the-loop (HIL) capability for radar testing</li>
+                    </ul>
+                </article>
+
+                <article class="product-service-card rf-card" id="rf-transceiver-cards">
+                    <h2>RF Transceiver Cards</h2>
+                    <p>
+                        RF Transceiver Cards feature advanced capabilities, including RF sampling, wide frequency ranges, MIMO configurations, and embedded FPGA processing, designed specifically for radar and communication systems.
+                    </p>
+                    <div class="rf-card-summary">
+                        <h3 class="feature-subheading">4 Tx-4 Rx Module &amp; Product Overview</h3>
+                        <ul>
+                            <li>Integrated 4 transmit and 4 receive channels for MIMO, beamforming, radar, wireless, and RF test systems.</li>
+                            <li>Wideband 500 MHz to 12 GHz RF coverage with phase-coherent multi-channel operation.</li>
+                            <li>FPGA / SoC-ready platform with Ethernet interface, GUI control, IQ data capture, and radar data processing.</li>
+                            <li>Supports multiple waveform types and simultaneous multi-TX / multi-RX operation.</li>
+                        </ul>
                     </div>
-                </details>
-                <details class="card service-tab" id="academic-product">
-                    <summary>
-                        <h3>Academic Product</h3>
-                        <p>Academic tools, prototypes, and learning-focused products for institutions, researchers, and student teams.</p>
-                    </summary>
-                    <div class="service-detail">
-                        <div>
-                            <p>We develop practical academic products that help learners and researchers work with real sensing concepts, embedded systems, and software workflows.</p>
-                            <p>These products can be tailored for labs, workshops, research demonstrations, and project-based learning environments.</p>
-                        </div>
-                        <div class="service-visual academic-visual">
-                            <img src="assets/acadamic_pro.jpg" alt="Academic product visual">
-                        </div>
-                    </div>
-                </details>
-                <details class="card service-tab" id="special-rd">
-                    <summary>
-                        <h3>Special R&amp;D</h3>
-                        <p>Focused research and development projects for unique technical requirements and experimental systems.</p>
-                    </summary>
-                    <div class="service-detail">
-                        <div>
-                            <p>We take on focused R&amp;D assignments where the requirement is exploratory, specialized, or outside a standard product workflow.</p>
-                            <p>This includes proof-of-concept systems, custom sensing experiments, technical demonstrations, and engineering validation tasks.</p>
-                        </div>
-                        <div class="service-visual">
-                            <img src="assets/R&D.jpg" alt="Special research and development visual">
-                        </div>
-                    </div>
-                </details>
-                <details class="card service-tab" id="skill-development">
-                    <summary>
-                        <h3>Skill Development</h3>
-                        <p>Training programs and practical learning modules for radar, embedded systems, and technology development skills.</p>
-                    </summary>
-                    <div class="service-detail">
-                        <div>
-                            <p>We design training programs that combine technical foundations with hands-on practice for students, engineers, and institutional teams.</p>
-                            <p>Modules can include radar fundamentals, sensor data processing, embedded development, software prototyping, and applied project guidance.</p>
-                        </div>
-                        <div class="service-visual">
-                            <img src="assets/skill_dev.jpg" alt="Skill development visual">
-                        </div>
-                    </div>
-                </details>
+                </article>
+            </div>
+        </section>
+
+        <section class="section academic-products-section" id="academic-products" aria-labelledby="academic-products-title">
+            <div class="product-services-heading">
+                <h1 class="academic-products-title" id="academic-products-title">Academic Products</h1>
+            </div>
+            <div class="academic-products-grid">
+                <article class="product-service-card academic-product-card" id="adas-lab">
+                    <h2>ADAS Lab</h2>
+                    <h3>Advanced Driver Assistance Systems Lab</h3>
+                    <p>
+                        The lab is equipped with cutting-edge hardware to facilitate learning and research in the fields of VLSI, signal processing, and communication systems. ADAS lab provides students with valuable real-world experience in the area of advanced driver assistance systems based technology that complements their theoretical knowledge gained in the classroom.
+                    </p>
+                    <ul>
+                        <li>Opportunity to work on projects that are directly relevant to industry needs, gaining practical skills and insights that can enhance employability.</li>
+                        <li>Facilitates faculty and student research in next-gen automotive systems.</li>
+                        <li>Supports high-quality publications, conference presentations, and innovation in national-level projects.</li>
+                        <li>Enables faculty to experiment with real-time sensor data for research and enhanced teaching.</li>
+                        <li>Opportunities for professional development, networking, and industry collaboration.</li>
+                    </ul>
+                    <button class="primary-button academic-feature-button" type="button" data-modal-open="adas-features-modal">Read More ...</button>
+                </article>
+
+                <article class="product-service-card academic-product-card" id="edil-lab">
+                    <h2>Electronic Defense Innovation Lab (EDIL)</h2>
+                    <p>
+                        The Electronic Defense Innovation Lab (EDIL) is a multidisciplinary platform focused on next-generation electronic warfare and radar system development. The lab integrates RF hardware, FPGA-based signal processing, and AI-driven analytics to enable hands-on learning and research in modern defense technologies.
+                    </p>
+                    <p>
+                        It is designed to bridge the gap between theoretical concepts and deployable systems through real-time implementation.
+                    </p>
+                    <button class="primary-button academic-feature-button" type="button" data-modal-open="edil-features-modal">Read More ...</button>
+                </article>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-main">
+            <section class="footer-brand">
+                <img src="assets/logo.png" alt="Sri Shasha Prayathi Technologies logo">
+                <p>Advancing radar, RF, and intelligent sensing technologies for defence, surveillance, industrial, and academic applications.</p>
+                <div class="footer-contact-list">
+                    <a href="mailto:admin@shashaprayathi.com">admin@shashaprayathi.com</a>
+                    <a href="mailto:director@shashaprayathi.com">director@shashaprayathi.com</a>
+                    <a href="https://www.shashaprayathi.com" target="_blank" rel="noopener">www.shashaprayathi.com</a>
+                    <span>NITK-STEP, Nursery Unit 12(b), Srinivasnagar, Surathkal, Mangalore, Karnataka, India 575025</span>
+                </div>
+            </section>
+            <nav class="footer-column" aria-label="Company links">
+                <h2>Company</h2>
+                <a href="index.html">Home</a>
+                <a href="index.html#vision-mission">Vision and Mission</a>
+                <a href="index.html#company">Company</a>
+                <a href="about.html#about-us">About Us</a>
+                <a href="about.html#technology-expertise">Technology Expertise</a>
+                <a href="projects.html#achievements">Achievements</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html#contact-details">Contact Us</a>
+                <a href="contact.html#map">Map</a>
+            </nav>
+            <nav class="footer-column" aria-label="Product and service links">
+                <h2>Product / Service</h2>
+                <a href="services.html#anti-drone-radar">Anti Drone Radar</a>
+                <a href="services.html#radar-waveform-generator">Radar Waveform Generator</a>
+                <a href="services.html#radar-target-echo-simulator">Radar Target Echo Simulator</a>
+                <a href="services.html#rf-transceiver-cards">RF Transceiver Cards</a>
+                <a href="services.html#academic-products">Academic Products</a>
+                <a href="services.html#adas-lab">ADAS Lab</a>
+                <a href="services.html#edil-lab">EDIL</a>
+            </nav>
+            <nav class="footer-column" aria-label="Achievement links">
+                <h2>Achievements</h2>
+                <a href="projects.html#short-range-radar-demonstration">Short-Range Radar Demonstration</a>
+                <a href="projects.html#wideband-radar-warning-receiver">Wideband Radar Warning Receiver</a>
+                <a href="projects.html#drdo-industry-synergy-award">DRDO Industry Synergy Meet 2025 Award</a>
+                <a href="projects.html#times-of-india-feature">Featured in The Times of India</a>
+            </nav>
+            <section class="footer-column footer-contact" aria-label="Contact details">
+                <h2>Contact Us</h2>
+                <a href="mailto:admin@shashaprayathi.com">admin@shashaprayathi.com</a>
+                <a href="mailto:director@shashaprayathi.com">director@shashaprayathi.com</a>
+                <a href="https://www.shashaprayathi.com" target="_blank" rel="noopener">www.shashaprayathi.com</a>
+                <p>NITK-STEP, Nursery Unit 12(b), Srinivasnagar, Surathkal, Mangalore, Karnataka, India 575025</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <strong>Innovative radar solutions for a safer tomorrow</strong>
+            <span>Innovate</span>
+            <span>Integrate</span>
+            <span>Protect</span>
+        </div>
+    </footer>
+
+    <div class="product-modal" id="adas-features-modal" aria-hidden="true">
+        <div class="product-modal-panel academic-modal-panel" role="dialog" aria-modal="true" aria-labelledby="adas-features-title">
+            <button class="product-modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+            <h2 id="adas-features-title">ADAS Lab Key Features</h2>
+            <ul>
+                <li>Video lectures will be provided to understand the theoretical concepts of basic radar principles and associated concepts related to these sensors.</li>
+                <li>Real time major projects with data acquired from these sensors using Python / MATLAB environment.</li>
+                <li>Comprehensive training with user guide on these radar sensor modules to integrate them into teaching learning process of UG and PG curriculum.</li>
+                <li>Internship offers for interested students to work on applications in the field of radar signal processing, sensor fusion and Advanced driver assistance systems (ADAS).</li>
+                <li>Number of mini project ideas with data acquired from these radar sensors using Python/MATLAB environment.</li>
+                <li>One year continuous support without any additional overhead charges in carrying out project works for students in the radar sensor lab.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-modal" id="edil-features-modal" aria-hidden="true">
+        <div class="product-modal-panel academic-modal-panel" role="dialog" aria-modal="true" aria-labelledby="edil-features-title">
+            <button class="product-modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+            <h2 id="edil-features-title">EDIL Key Features</h2>
+            <ul>
+                <li>Structured video lectures (Radar, ELINT, COMINT, RWR, DRFM)</li>
+                <li>Modular learning: basics to advanced system design</li>
+                <li>Hands-on access to 4Tx-4Rx custom radar hardware</li>
+                <li>MATLAB-based radar simulation and signal processing</li>
+                <li>Python-based AI/ML for signal classification</li>
+                <li>Real-time radar data acquisition and visualization</li>
+                <li>Mini projects and major projects</li>
+                <li>DRFM, RWR, and EW system implementation exposure</li>
+                <li>AI-based threat detection and classification projects</li>
+                <li>Research support (IEEE papers, prototypes, innovation)</li>
+                <li>Collaboration opportunities with industry and defense sectors</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

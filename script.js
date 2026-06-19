@@ -1,3 +1,26 @@
+document.querySelectorAll(".navbar").forEach((navbar) => {
+    const toggle = navbar.querySelector(".nav-toggle");
+    const links = navbar.querySelector(".nav-links");
+
+    if (!toggle || !links) {
+        return;
+    }
+
+    toggle.addEventListener("click", () => {
+        const isOpen = navbar.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    });
+
+    links.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-label", "Open navigation menu");
+        });
+    });
+});
+
 function getFormValue(form, name) {
     const field = form.elements[name];
 
@@ -109,4 +132,74 @@ document.querySelectorAll(".career-code-picker").forEach((picker) => {
             picker.open = false;
         });
     });
+});
+
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+    const images = Array.from(carousel.querySelectorAll(".career-carousel-frame img"));
+    const previousButton = carousel.querySelector("[data-carousel-prev]");
+    const nextButton = carousel.querySelector("[data-carousel-next]");
+    let activeIndex = images.findIndex((image) => image.classList.contains("is-active"));
+
+    if (!images.length || !previousButton || !nextButton) {
+        return;
+    }
+
+    if (activeIndex < 0) {
+        activeIndex = 0;
+        images[activeIndex].classList.add("is-active");
+    }
+
+    function showImage(nextIndex) {
+        images[activeIndex].classList.remove("is-active");
+        activeIndex = (nextIndex + images.length) % images.length;
+        images[activeIndex].classList.add("is-active");
+    }
+
+    previousButton.addEventListener("click", () => showImage(activeIndex - 1));
+    nextButton.addEventListener("click", () => showImage(activeIndex + 1));
+});
+
+let activeProductModal = null;
+
+function closeProductModal() {
+    if (!activeProductModal) {
+        return;
+    }
+
+    activeProductModal.classList.remove("is-open");
+    activeProductModal.setAttribute("aria-hidden", "true");
+    activeProductModal = null;
+}
+
+document.querySelectorAll("[data-modal-open]").forEach((button) => {
+    button.addEventListener("click", () => {
+        const modal = document.getElementById(button.dataset.modalOpen);
+
+        if (!modal) {
+            return;
+        }
+
+        activeProductModal = modal;
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+
+        const closeButton = modal.querySelector("[data-modal-close]");
+        if (closeButton) {
+            closeButton.focus();
+        }
+    });
+});
+
+document.querySelectorAll(".product-modal").forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal || event.target.closest("[data-modal-close]")) {
+            closeProductModal();
+        }
+    });
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeProductModal();
+    }
 });

@@ -6,54 +6,149 @@
     <title> Sri Shasha Prayathi Technologies | Intelligent Sensing Startup</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
     <header class="site-header" id="home">
         <nav class="navbar" aria-label="Primary navigation">
             <a class="brand" href="#home">
                 <img class="brand-logo" src="assets/logo.png" alt="Sri Shasha Prayathi Technologies logo">
                 <span class="brand-name">Sri Shasha Prayathi Technologies Pvt. Ltd</span>
             </a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="services.html">Product/Services</a>
                 <a href="about.html">About Us</a>
-                <a href="projects.html">Projects &amp; Achievements</a>
-                <a href="contact.html">Contact Us</a>
-                <a class="career-button" href="careers.html">Careers</a>
+                <a href="projects.html">Achievements</a>
+                <a href="careers.html">Careers</a>
+                <a class="contact-button" href="contact.html">Contact Us</a>
             </div>
         </nav>
+        <nav class="page-subnav home-subnav" aria-label="Home page navigation">
+            <a href="#company">Company</a>
+            <a href="#vision-mission">Vision and Mission</a>
+            <a href="#customers">Customers</a>
+        </nav>
 
-        <section class="hero" aria-label="Radar technology banner">
+        <section class="hero" id="company" aria-label="Radar technology banner">
             <div class="hero-content">
-                <p class="eyebrow">Short-Range Radar Innovation Centre</p>
-                <h1>Advanced Radar, RF Transceiver, Anti-Drone and Signal Processing Solutions for Defense, Surveillance and Intelligent Sensing Applications.</h1>
-            </div>
-            <div class="hero-panel" aria-label="Radar system highlights">
-                <span>24/7</span>
-                <p>Real-time object detection, range estimation, and target tracking.</p>
+                <h1 class="hero-title">Short-Range Radar Innovation Centre</h1>
+                <p class="hero-subtitle">Advanced Radar and RF Technologies for Defence and Intelligent Sensing</p>
+                <ul class="hero-points">
+                    <li>Anti-Drone Detection and Tracking</li>
+                    <li>Real-Time Radar Waveform Generators</li>
+                    <li>Sensor Fusion and Intelligent Analytics</li>
+                    <li>Compact and High-Performance Solutions</li>
+                    <li>Custom Radar Hardware and Software Development</li>
+                    <li>Defence, Surveillance, and Smart Infrastructure Applications</li>
+                </ul>
             </div>
         </section>
 
-        <section class="home-intro">
+        <section class="home-intro" id="vision-mission">
             <div class="home-intro-content">
-                <p class="hero-copy">
-                    To carry on the business of designing, development, customization, implementation, maintenance, 
-                    testing and bench marking different kinds of Software's, Mobiles or Desktop applications related to Radar, 
-                    Video, Sonar and Automatic identification system (AIS) and Global positioning system (GPS) sensor data 
-                    processing or any other activities and to provide information technology services related to data analysis, 
-                    data processing, data integration and to provide all types of services related to information technology 
-                    and software solutions and further to provide Training and Consulting services in a fore said activities 
-                    in or outside India.
-                </p>
-                <div class="hero-actions">
-                    <a class="primary-button" href="contact.html">Start a Project</a>
-                    <a class="secondary-button" href="services.html">Explore Services</a>
+                <div class="home-vision-mission">
+                    <h2>Vision and Mission</h2>
+                    <article class="home-vm-card">
+                        <h3>
+                            <img src="assets/vision-icon.png" alt="" aria-hidden="true">
+                            Vision
+                        </h3>
+                        <p>
+                            To become a leading technology provider in short-range radar applications, enabling intelligent and reliable solutions for defence, civil, and industrial applications.
+                        </p>
+                    </article>
+                    <article class="home-vm-card">
+                        <h3>
+                            <img src="assets/mission-icon.png" alt="" aria-hidden="true">
+                            Mission
+                        </h3>
+                        <ul>
+                            <li>Develop short-range radars for various defence and civilian applications.</li>
+                            <li>Deliver reliable sensing technologies for real-time perception and surveillance.</li>
+                            <li>Foster research, innovation, and skill development in advanced radar technology.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
             <figure class="home-company-image">
                 <img src="assets/companyprof.png" alt="Sri Shasha Prayathi Technologies team with radar equipment">
             </figure>
         </section>
+
+        <section class="customers-section" id="customers" aria-labelledby="customers-title">
+            <h2 id="customers-title">Customers</h2>
+            <div class="customers-grid">
+                <img src="assets/drdo1.png" alt="TSL at DRDO">
+                <img src="assets/drdo2.jpg" alt="ADE DRDO">
+                <img src="assets/drdo3.jpg" alt="LRDE DRDO">
+                <img src="assets/drdo4.jpg" alt="DSLI CT DRDO">
+                <img src="assets/nbkrist.jpg" alt="NBKR Institute of Science and Technology">
+                <img src="assets/gitam.png" alt="GITAM Deemed to be University">
+                <img src="assets/stann.png" alt="St. Ann's College of Engineering and Technology">
+            </div>
+        </section>
     </header>
+
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-main">
+            <section class="footer-brand">
+                <img src="assets/logo.png" alt="Sri Shasha Prayathi Technologies logo">
+                <p>Advancing radar, RF, and intelligent sensing technologies for defence, surveillance, industrial, and academic applications.</p>
+                <div class="footer-contact-list">
+                    <a href="mailto:admin@shashaprayathi.com">admin@shashaprayathi.com</a>
+                    <a href="mailto:director@shashaprayathi.com">director@shashaprayathi.com</a>
+                    <a href="https://www.shashaprayathi.com" target="_blank" rel="noopener">www.shashaprayathi.com</a>
+                    <span>NITK-STEP, Nursery Unit 12(b), Srinivasnagar, Surathkal, Mangalore, Karnataka, India 575025</span>
+                </div>
+            </section>
+            <nav class="footer-column" aria-label="Company links">
+                <h2>Company</h2>
+                <a href="index.html">Home</a>
+                <a href="index.html#vision-mission">Vision and Mission</a>
+                <a href="index.html#company">Company</a>
+                <a href="about.html#about-us">About Us</a>
+                <a href="about.html#technology-expertise">Technology Expertise</a>
+                <a href="projects.html#achievements">Achievements</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html#contact-details">Contact Us</a>
+                <a href="contact.html#map">Map</a>
+            </nav>
+            <nav class="footer-column" aria-label="Product and service links">
+                <h2>Product / Service</h2>
+                <a href="services.html#anti-drone-radar">Anti Drone Radar</a>
+                <a href="services.html#radar-waveform-generator">Radar Waveform Generator</a>
+                <a href="services.html#radar-target-echo-simulator">Radar Target Echo Simulator</a>
+                <a href="services.html#rf-transceiver-cards">RF Transceiver Cards</a>
+                <a href="services.html#academic-products">Academic Products</a>
+                <a href="services.html#adas-lab">ADAS Lab</a>
+                <a href="services.html#edil-lab">EDIL</a>
+            </nav>
+            <nav class="footer-column" aria-label="Achievement links">
+                <h2>Achievements</h2>
+                <a href="projects.html#short-range-radar-demonstration">Short-Range Radar Demonstration</a>
+                <a href="projects.html#wideband-radar-warning-receiver">Wideband Radar Warning Receiver</a>
+                <a href="projects.html#drdo-industry-synergy-award">DRDO Industry Synergy Meet 2025 Award</a>
+                <a href="projects.html#times-of-india-feature">Featured in The Times of India</a>
+            </nav>
+            <section class="footer-column footer-contact" aria-label="Contact details">
+                <h2>Contact Us</h2>
+                <a href="mailto:admin@shashaprayathi.com">admin@shashaprayathi.com</a>
+                <a href="mailto:director@shashaprayathi.com">director@shashaprayathi.com</a>
+                <a href="https://www.shashaprayathi.com" target="_blank" rel="noopener">www.shashaprayathi.com</a>
+                <p>NITK-STEP, Nursery Unit 12(b), Srinivasnagar, Surathkal, Mangalore, Karnataka, India 575025</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <strong>Innovative radar solutions for a safer tomorrow</strong>
+            <span>Innovate</span>
+            <span>Integrate</span>
+            <span>Protect</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

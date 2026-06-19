@@ -13,13 +13,18 @@
                 <img class="brand-logo" src="assets/logo.png" alt="Sri Shasha Prayathi Technologies logo">
                 <span class="brand-name">Sri Shasha Prayathi Technologies Pvt. Ltd</span>
             </a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="services.html">Product/Services</a>
                 <a href="about.html">About Us</a>
-                <a href="projects.html">Projects &amp; Achievements</a>
-                <a href="contact.html">Contact Us</a>
-                <a class="career-button" href="careers.html">Careers</a>
+                <a href="projects.html">Achievements</a>
+                <a href="careers.html">Careers</a>
+                <a class="contact-button" href="contact.html">Contact Us</a>
             </div>
         </nav>
     </header>
@@ -29,41 +34,8 @@
             <p class="eyebrow">Careers</p>
             <h1>Join a small team building serious sensing technology.</h1>
             <p>We are interested in radar engineers, embedded developers, and signal-processing researchers.</p>
-            <div class="career-openings">
-                <article class="career-opening card">
-                    <div class="career-opening-copy">
-                        <h3>Paid internship openings for 12 months</h3>
-                        <p>Openings for B.Tech CSE people with skill set of C++ and MATLAB.</p>
-                        <p>Based on the performance during the internship period, the candidate shall be promoted to system engineer.</p>
-                    </div>
-                    <div class="service-visual career-visual internship-visual">
-                        <img src="assets/internship.jpg" alt="Paid internship opening visual">
-                    </div>
-                </article>
-                <article class="career-opening card">
-                    <div class="career-opening-copy">
-                        <h3>Software Developer openings</h3>
-                        <p>Openings for B.Tech or M.Tech graduates with skill set C++ and MATLAB.</p>
-                        <p>Salary as per the norms of the company.</p>
-                    </div>
-                    <div class="service-visual career-visual">
-                        <img src="assets/software_dev.jpg" alt="Software developer opening visual">
-                    </div>
-                </article>
-            </div>
             <div class="career-apply">
-                <p class="resume-note">Send us your resume at <a href="mailto:ceo@shashaprayathi.com">ceo@shashaprayathi.com</a></p>
                 <div class="career-apply-grid">
-                    <div class="internship-codes">
-                        <h2>Internships:</h2>
-                        <p><strong>PI-12M-V :</strong> paid internship openings for B.Tech ECE with expertise in verilog and vhdl. Tenure: twelve months.</p>
-                        <p><strong>PI-12M-C :</strong> paid internship openings for B.Tech ECE or CSE with expertise in cpp and Matlab. Tenure: twelve months.</p>
-                        <p><strong>UPI-6M-V :</strong> Unpaid internship openings for B.Tech ECE with expertise in verilog and vhdl. Tenure: six months.</p>
-                        <p><strong>UPI-6M-C :</strong> Unpaid internship openings for B.Tech ECE or CSE with expertise in cpp and Matlab. Tenure: six months.</p>
-                        <p><strong>UPI-3M :</strong> Unpaid internship openings for B.Tech III year ECE or CSE with expertise in cpp or Matlab or VHDL. Tenure: three months.</p>
-                        <p><strong>UPI-2M :</strong> Unpaid internship openings for B.Tech III year ECE or CSE with expertise in cpp or Matlab or VHDL. Tenure: two months.</p>
-                        <p><strong>UPI-1M :</strong> Unpaid internship openings for B.Tech III year ECE or CSE with expertise in cpp or Matlab or VHDL. Tenure: one month.</p>
-                    </div>
                     <form class="career-form" data-form-type="career">
                         <h2>Get In Touch</h2>
                         <div class="career-form-row">
@@ -74,18 +46,6 @@
                             <input type="email" name="email" placeholder="Email" aria-label="Email" required>
                             <input type="tel" name="phone" placeholder="Phone" aria-label="Phone">
                         </div>
-                        <details class="career-code-picker">
-                            <summary>Internship Code</summary>
-                            <div class="career-code-options">
-                                <label><input type="radio" name="internship-code" value="PI-12M-V"> PI-12M-V</label>
-                                <label><input type="radio" name="internship-code" value="PI-12M-C"> PI-12M-C</label>
-                                <label><input type="radio" name="internship-code" value="UPI-6M-V"> UPI-6M-V</label>
-                                <label><input type="radio" name="internship-code" value="UPI-6M-C"> UPI-6M-C</label>
-                                <label><input type="radio" name="internship-code" value="UPI-3M"> UPI-3M</label>
-                                <label><input type="radio" name="internship-code" value="UPI-2M"> UPI-2M</label>
-                                <label><input type="radio" name="internship-code" value="UPI-1M"> UPI-1M</label>
-                            </div>
-                        </details>
                         <textarea name="message" rows="5" placeholder="Type your message here" aria-label="Message" required></textarea>
                         <button type="submit">Submit</button>
                         <p class="form-status" aria-live="polite"></p>
@@ -94,6 +54,63 @@
             </div>
         </section>
     </main>
+
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-main">
+            <section class="footer-brand">
+                <img src="assets/logo.png" alt="Sri Shasha Prayathi Technologies logo">
+                <p>Advancing radar, RF, and intelligent sensing technologies for defence, surveillance, industrial, and academic applications.</p>
+                <div class="footer-contact-list">
+                    <a href="mailto:admin@shashaprayathi.com">admin@shashaprayathi.com</a>
+                    <a href="mailto:director@shashaprayathi.com">director@shashaprayathi.com</a>
+                    <a href="https://www.shashaprayathi.com" target="_blank" rel="noopener">www.shashaprayathi.com</a>
+                    <span>NITK-STEP, Nursery Unit 12(b), Srinivasnagar, Surathkal, Mangalore, Karnataka, India 575025</span>
+                </div>
+            </section>
+            <nav class="footer-column" aria-label="Company links">
+                <h2>Company</h2>
+                <a href="index.html">Home</a>
+                <a href="index.html#vision-mission">Vision and Mission</a>
+                <a href="index.html#company">Company</a>
+                <a href="about.html#about-us">About Us</a>
+                <a href="about.html#technology-expertise">Technology Expertise</a>
+                <a href="projects.html#achievements">Achievements</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html#contact-details">Contact Us</a>
+                <a href="contact.html#map">Map</a>
+            </nav>
+            <nav class="footer-column" aria-label="Product and service links">
+                <h2>Product / Service</h2>
+                <a href="services.html#anti-drone-radar">Anti Drone Radar</a>
+                <a href="services.html#radar-waveform-generator">Radar Waveform Generator</a>
+                <a href="services.html#radar-target-echo-simulator">Radar Target Echo Simulator</a>
+                <a href="services.html#rf-transceiver-cards">RF Transceiver Cards</a>
+                <a href="services.html#academic-products">Academic Products</a>
+                <a href="services.html#adas-lab">ADAS Lab</a>
+                <a href="services.html#edil-lab">EDIL</a>
+            </nav>
+            <nav class="footer-column" aria-label="Achievement links">
+                <h2>Achievements</h2>
+                <a href="projects.html#short-range-radar-demonstration">Short-Range Radar Demonstration</a>
+                <a href="projects.html#wideband-radar-warning-receiver">Wideband Radar Warning Receiver</a>
+                <a href="projects.html#drdo-industry-synergy-award">DRDO Industry Synergy Meet 2025 Award</a>
+                <a href="projects.html#times-of-india-feature">Featured in The Times of India</a>
+            </nav>
+            <section class="footer-column footer-contact" aria-label="Contact details">
+                <h2>Contact Us</h2>
+                <a href="mailto:admin@shashaprayathi.com">admin@shashaprayathi.com</a>
+                <a href="mailto:director@shashaprayathi.com">director@shashaprayathi.com</a>
+                <a href="https://www.shashaprayathi.com" target="_blank" rel="noopener">www.shashaprayathi.com</a>
+                <p>NITK-STEP, Nursery Unit 12(b), Srinivasnagar, Surathkal, Mangalore, Karnataka, India 575025</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <strong>Innovative radar solutions for a safer tomorrow</strong>
+            <span>Innovate</span>
+            <span>Integrate</span>
+            <span>Protect</span>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
